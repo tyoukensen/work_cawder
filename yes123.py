@@ -11,9 +11,10 @@ yes123
 #from bs4 import BeautifulSoup
 from selenium import webdriver
 url="https://www.yes123.com.tw/admin/job_refer_list.asp"
+xx="python"
 dr=webdriver.Chrome()
 dr.get(url)
-dr.find_element_by_id("find_key1").send_keys("python")
+dr.find_element_by_id("find_key1").send_keys(xx)
 dr.find_element_by_class_name("bt_search").click()
 dr.find_element_by_xpath("//div[@class='illustrate']//li[2]//a[1]").click()
 dr.find_element_by_xpath("//li[@class='date2']//a").click()

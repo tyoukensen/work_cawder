@@ -8,10 +8,10 @@ Created on Sat Feb  1 14:04:55 2020
 import requests
 from bs4 import BeautifulSoup
 
-bb="tensorflow" #搜尋工作類型
-dd=10       #頁數
-for i in range(1,dd):
-    url=f"https://www.104.com.tw/jobs/search/?ro=0&kwop=7&keyword={bb}&area=6001008000&order=11&asc=0&page={i}&mode=s"
+xx="tensorflow" #搜尋工作類型
+yy=10       #頁數
+for i in range(1,yy):
+    url=f"https://www.104.com.tw/jobs/search/?ro=0&kwop=7&keyword={xx}&area=6001008000&order=11&asc=0&page={i}&mode=s"
     aa=requests.get(url)
     bs=BeautifulSoup(aa.text, 'html.parser')
     ww=bs.find_all(class_="b-block--top-bord job-list-item b-clearfix js-job-item")

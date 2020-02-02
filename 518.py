@@ -7,8 +7,8 @@ Created on Sun Feb  2 10:18:53 2020
 import requests
 #from bs4 import Beautifulsoup
 from bs4 import BeautifulSoup
-aa="python"
-url=f"https://www.518.com.tw/job-index-P-1.html?i=1&am=1&ad={aa}&ai=0&orderType=1&orderField=8"
+xx="python"
+url=f"https://www.518.com.tw/job-index-P-1.html?i=1&am=1&ad={xx}&ai=0&orderType=1&orderField=8"
 bb=requests.get(url)
 bb=BeautifulSoup(bb.text,"html.parser")
 cc=bb.find_all(class_="title")
