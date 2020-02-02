@@ -13,10 +13,19 @@ bb=requests.get(url)
 bb=BeautifulSoup(bb.text,"html.parser")
 cc=bb.find_all(class_="title")
 dd=bb.find_all(class_="sumbox")
-for ff in dd:
-    gg=ff.find_all("p")[1]
-for ee in cc:
+#for ff in dd:
+#    gg=ff.find_all("p")[1]
+#for ee in cc:
+#    print(ee.text.strip())
+#    print(ee.a["href"])
+#    print(gg.text.strip())
+#    print("-"*85)
+for ee,gg in zip(cc,dd):
     print(ee.text.strip())
     print(ee.a["href"])
     print(gg.text.strip())
     print("-"*85)
+    
+    
+    
+    
