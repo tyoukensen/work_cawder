@@ -122,4 +122,4 @@ if __name__ == '__main__':
     main(work_name)
     
 f.close()
-print("end")
+print("程式結束，資料儲存在work文件檔裡面")
